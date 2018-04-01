@@ -7,9 +7,8 @@ public:
         int i = nums[0];
         for(int num : nums){
             if(num != i){
-                nums[count] = num;
+                nums[count++] = num;
                 i=num;
-                count++;
             }
         }
         return count;
